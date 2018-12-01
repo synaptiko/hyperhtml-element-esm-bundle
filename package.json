@@ -1,0 +1,19 @@
+{
+  "name": "hyperhtml-element-esm-bundle",
+  "version": "3.3.0",
+  "author": "Jiří Prokop <jprokop@synaptiko.cz>",
+  "license": "ISC",
+  "scripts": {
+    "build": "rollup -c && uglifyjs esm.js --comments=/^!/ --compress --mangle -o min.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "hyperhtml": "^2.20.1",
+    "hyperhtml-element": "^3.3.0",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "uglify-es": "^3.3.9"
+  }
+}
